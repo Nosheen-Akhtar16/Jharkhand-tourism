@@ -125,6 +125,7 @@
       transition: background 0.3s;
       user-select: none;
     }
+    
 
     .hero .hero-left button:hover {
       background: #e6b007;

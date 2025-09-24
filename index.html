@@ -72,7 +72,74 @@
       <input type="search" id="search-gems" name="search_gems" placeholder="Search for gems, places, or festivals..." aria-label="Search for hidden gems"/>
     </div>
   </section>
+<button id="openPopup" 
+    style="position:fixed; top:50%; right:0; transform:translateY(-50%); background-color:yellow; color:rgb(2, 2, 2); padding:15px; border:none; border-radius:8px 0 0 8px; cursor:pointer; z-index:1000;">
+    Cultural<br>Etiquette tips
+  </button>
 
+  <!-- Side Popup Panel -->
+  <div id="popup" 
+    style="display:none; position:fixed; top:0; right:0; height:100%; width:300px; background-color:#bdb35d; box-shadow:-2px 0 10px rgba(0,0,0,0.2); padding:20px; z-index:999;">
+    
+    <!-- Close Button -->
+    <span id="closePopup" 
+      style="position:absolute; top:10px; right:15px; font-size:24px; cursor:pointer;">&times;</span>
+
+    <h2 style="margin-top:40px; text-align:center;">Traditional Etiquette</h2>
+
+    <!-- Scrollable Card Area -->
+    <div style="display:flex; overflow-x:auto; gap:10px; padding-top:20px;">
+
+      <div style="min-width:200px; background-color:#ecda70; padding:20px; border-radius:8px; text-align:center;">
+        <h2 style="color: black;">What to wear in jharkhand</h2>
+        <h6 style="color: rgb(70, 64, 64);">👩 Women:
+
+Traditional Sarees – often in bright colors, cotton or silk, worn in unique tribal draping styles.
+
+Panchi & Parhan – a type of traditional dress for tribal women (like a long wrap skirt and blouse or top).
+
+Jewelry – silver, beads, and tribal-style ornaments are very common, especially for festivals.
+<br>
+👨 Men:
+
+Dhoti or Lungi – traditionally worn with a simple kurta or vest.
+
+Gamchha – a handwoven towel, often draped over the shoulder or head.
+
+Headgear (Pagri) – in some tribes during cultural events.</h4>
+      </div>
+      <div style="min-width:200px; background-color:#e2e2e2; padding:20px; border-radius:8px; text-align:center;">
+        Etiquette 2
+      </div>
+      <div style="min-width:200px; background-color:#e2e2e2; padding:20px; border-radius:8px; text-align:center;">
+        Etiquette 3
+      </div>
+      <div style="min-width:200px; background-color:#e2e2e2; padding:20px; border-radius:8px; text-align:center;">
+        Etiquette 4
+      </div>
+      <div style="min-width:200px; background-color:#e2e2e2; padding:20px; border-radius:8px; text-align:center;">
+        Etiquette 5
+      </div>
+
+    </div>
+  </div>
+  <script>
+    document.getElementById("openPopup").onclick = function () {
+      document.getElementById("popup").style.display = "block";
+    };
+
+    document.getElementById("closePopup").onclick = function () {
+      document.getElementById("popup").style.display = "none";
+    };
+
+    // Optional: close when clicking outside
+    window.onclick = function(event) {
+      const popup = document.getElementById("popup");
+      if (event.target !== popup && !popup.contains(event.target) && event.target.id !== "openPopup") {
+        popup.style.display = "none";
+      }
+    };
+  </script>
   <!-- Explore Hidden Gems -->
   <section class="container" id="explore-hidden" aria-label="Explore Hidden Gems">
     <h3 class="section-title">Explore Hidden Gems &rarr;</h3>

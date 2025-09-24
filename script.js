@@ -14,6 +14,22 @@
       }
     });
 
+    document.getElementById("openPopup").onclick = function () {
+      document.getElementById("popup").style.display = "block";
+    };
+
+    document.getElementById("closePopup").onclick = function () {
+      document.getElementById("popup").style.display = "none";
+    };
+
+    // Optional: close when clicking outside
+    window.onclick = function(event) {
+      const popup = document.getElementById("popup");
+      if (event.target !== popup && !popup.contains(event.target) && event.target.id !== "openPopup") {
+        popup.style.display = "none";
+      }
+    };
+  
     // Trip Plan AI simulation
     const planBtn = document.getElementById('plan-trip-btn');
     const tripInput = document.getElementById('trip-input');
