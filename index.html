@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jharkhand Tourism</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo" aria-label="Logo">Travel Jharkhand</div>
+    <ul>
+      <li><a href="#discover">Discover</a></li>
+      <li><a href="#explore-hidden">Hidden Gems</a></li>
+      <li><a href="#explore-famous">Famous Places</a></li>
+      <li><a href="#upcoming-festivals">Festivals</a></li>
+      <li><a href="#trip-planner">AI Trip Plan</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right" title="Toggle Light/Dark Mode">
+      <svg id="theme-toggle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+        stroke-linecap="round" stroke-linejoin="round" style="width:24px; height:24px;user-select:none;">
+        <circle cx="12" cy="12" r="5" />
+        <line x1="12" y1="1" x2="12" y2="3" />
+        <line x1="12" y1="21" x2="12" y2="23" />
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+        <line x1="1" y1="12" x2="3" y2="12" />
+        <line x1="21" y1="12" x2="23" y2="12" />
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+      </svg>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="container hero" aria-label="Hero section showcasing Jharkhand">
+    <div class="hero-left">
+      <h2>JHARKHAND</h2>
+      <p>Discover the natural splendor and cultural heritage of Jharkhand, from lush forests and wildlife sanctuaries
+        to magnificent temples and waterfalls.</p>
+      <button aria-label="Explore Jharkhand">Explore</button>
+    </div>
+    <div class="hero-right" aria-hidden="true">
+      <div class="card-small" tabindex="0" aria-label="Image of Palamu Tiger Reserve">
+        <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/08/f582bf2addeeed1ed9cd4e728aa0d116_1000x1000.jpg" alt="Tiger in forest" />
+        <div class="card-info">Palamu Tiger Reserve</div>
+      </div>
+      <div class="card-small" tabindex="0" aria-label="Image of Dassam Waterfalls">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=60" alt="Waterfall" />
+        <div class="card-info">Dassam Falls</div>
+      </div>
+      <div class="card-small" tabindex="0" aria-label="Image of Jagannath Temple">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/4b/da/fb/jagannath-temple.jpg?w=1200&h=-1&s=1" alt="Temple" />
+        <div class="card-info">Jagannath Temple</div>
+      </div>
+      <div class="circle" tabindex="0" aria-label="More images">+</div>
+    </div>
+  </section>
+
+  <!-- Banner Section -->
+  <section class="banner" id="discover" aria-label="Discover the beauty of Jharkhand">
+    <h1>Discover the beauty of Jharkhand</h1>
+    <p>Experience pristine forests, magnificent waterfalls, colorful cultures, and rich historical landmarks.
+      Jharkhand holds a treasure trove of nature and great cultural heritage.</p>
+    <button aria-label="Begin your travel here">Begin Your Travel Here</button>
+
+    <div class="search-bar" role="search">
+      <input type="search" id="search-gems" name="search_gems" placeholder="Search for gems, places, or festivals..." aria-label="Search for hidden gems"/>
+    </div>
+  </section>
+
+  <!-- Explore Hidden Gems -->
+  <section class="container" id="explore-hidden" aria-label="Explore Hidden Gems">
+    <h3 class="section-title">Explore Hidden Gems &rarr;</h3>
+    <div class="cards-grid" id="hidden-gems-list">
+      <article class="card" tabindex="0" aria-labelledby="title-misahri">
+        <img src="https://d3sftlgbtusmnv.cloudfront.net/blog/wp-content/uploads/2024/09/Netarhat-waterfalls-cover-image-840x425.jpg" alt="Tea garden in Misahri" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-misahri">Netarhat</h4>
+          <p class="card-desc">Queen of Chotanagpur, stunning hill station</p>
+        </div>
+      </article>
+      <article class="card" tabindex="0" aria-labelledby="title-malai">
+        <img src="https://www.newsbharati.com/Encyc/2022/5/11/maluti_202205111656419101_H@@IGHT_0_W@@IDTH_600.png" alt="Malai Temple" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-malai">Maluti</h4>
+          <p class="card-desc">Ancient terracotta temple village</p>
+        </div>
+      </article>
+      <article class="card" tabindex="0" aria-labelledby="title-dasam">
+        <img src="https://dy3rma73kowlp.cloudfront.net/uploads/2024/01/l2.jpg" alt="Dasam Falls" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-dasam">Lodh Falls</h4>
+          <p class="card-desc">Highest waterfall in Jharkhand</p>
+        </div>
+      </article>
+      <article class="card" tabindex="0" aria-labelledby="title-jonha">
+        <img src="https://www.hlimg.com/images/things2do/738X538/ttd_1510594280m1.jpg?w=400&dpr=2.6" alt="Jonha Falls" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-jonha">Jonha Falls</h4>
+          <p class="card-desc">Scenic waterfall surrounded by nature,Also known as Gautamdhara</p>
+        </div>
+      </article>
+      <article class="card" tabindex="0" aria-labelledby="title-bhera">
+        <img src="https://img.freepik.com/premium-photo/scenic-view-dhurwa-dam-ranchi-jharkhand_193751-107.jpg" alt="Bhera Dam" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-bhera">Dhurwa Dam</h4>
+          <p class="card-desc">Popular picnic spot near Ranchi</p>
+        </div>
+      </article>
+      <article class="card" tabindex="0" aria-labelledby="title-sukhoni">
+        <img src="https://www.adotrip.com/public/images/city/master_images/5e3bbe6e49886-Sahibganj_Attractions.jpg" alt="Sukhoni Forest" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-sukhoni">Sahibganj</h4>
+          <p class="card-desc">Rich tribal culture and heritage</p>
+        </div>
+      </article>
+      <article class="card" tabindex="0" aria-labelledby="title-deoghar">
+        <img src="https://cf-img-a-in.tosshub.com/lingo/gnt/images/story/202408/66c46b54b5548-hazaribagh-tourism-200923695-16x9.jpg?size=948:533" alt="Deoghar" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-deoghar">Hazaribagh</h4>
+          <p class="card-desc">City of a thousand gardens</p>
+        </div>
+      </article>
+      <article class="card" tabindex="0" aria-labelledby="title-mahar">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx59Ou1MSS7Fyk13L1jyriyRvM6_t924p2Kg&s" alt="Mahar Ridge" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-mahar">Mahar Ridge</h4>
+          <p class="card-desc">Nature and adventure trails</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Explore Famous Places -->
+  <section class="container" id="explore-famous" aria-label="Explore Famous Places">
+    <h3 class="section-title">Explore Famous Places &rarr;</h3>
+    <div class="cards-grid" id="famous-places-list">
+      <article class="card" tabindex="0" aria-labelledby="title-betta">
+        <img src="https://site.outlookindia.com/traveller/wp-content/uploads/2017/06/jharkhand1_Betla-NP_FI.jpg" alt="Bela Wildlife Park Tiger" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-betta">Betla Wildlife Park</h4>
+          <p class="card-desc">Home to tigers, elephants, and more</p>
+        </div>
+      </article>
+      <article class="card" tabindex="0" aria-labelledby="title-dassam">
+        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/dassam-falls-ranchi-jharkhand-ranchi-1-attr-hero?qlt=82&ts=1727010932624" alt="Dassam Falls" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-dassam">Dassam Falls</h4>
+          <p class="card-desc">A stunning natural cascade</p>
+        </div>
+      </article>
+      <article class="card" tabindex="0" aria-labelledby="title-baagirathi">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/09/7f/87/bol-bam.jpg?w=600&h=-1&s=1" alt="Baagirathi Temple" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-baagirathi">Deoghar</h4>
+          <p class="card-desc">Abode of Lord Baidyanathi</p>
+        </div>
+      </article>
+      <article class="card" tabindex="0" aria-labelledby="title-dalta">
+        <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/08/5023f8101919b30225b521745ab3436a_1000x1000.jpg" alt="Dalta Wildlife Sanctuary" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-dalta">Dalma Wildlife Sanctuary</h4>
+          <p class="card-desc">Famous for wildlife sightings</p>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" aria-labelledby="title-netarhat">
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=500&q=60" alt="Netarhat Plateau" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-netarhat">Netarhat Plateau</h4>
+          <p class="card-desc">Spectacular sunset and scenic views</p>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" aria-labelledby="title-kanke">
+        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=500&q=60" alt="Kanke Dam" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-kanke">Kanke Dam</h4>
+          <p class="card-desc">Popular for boating and picnics</p>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" aria-labelledby="title-hydru">
+        <img src="https://captureatrip-cms-storage.s3.ap-south-1.amazonaws.com/Rejuvenating_Bath_at_the_Natural_Pool_in_Hundru_Waterfall_1985307590.webp" alt="Hydru Falls" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-hydru">Hudru Falls</h4>
+          <p class="card-desc">One of the highest waterfalls in Jharkhand</p>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" aria-labelledby="title-jagannath">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/4b/da/fb/jagannath-temple.jpg?w=1200&h=-1&s=1" alt="Jagannath Temple" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-jagannath">Jagannath Temple</h4>
+          <p class="card-desc">A world-famous landmark in Ranchi</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Trip Planner Section -->
+  <section class="trip-planner" id="trip-planner" aria-label="Plan your trip through AI">
+    <h2>Plan your trip through AI</h2>
+    <p>
+      Tell us where you'd like to go, what you want to experience (cultural, adventurous),
+      and when you plan to travel. Our AI will craft a personalized itinerary just for you.
+    </p>
+    <textarea id="trip-input" placeholder="Eg., I want to visit ancient temples in Rajgir, explore local markets, and relax by a lake in the evening."
+      aria-label="Trip preferences input"></textarea>
+    <br />
+    <button id="plan-trip-btn" aria-label="Plan my trip">Plan my trip</button>
+
+    <div id="trip-result" style="margin-top: 25px; font-size: 1rem; color: #a5ffa1;"></div>
+  </section>
+
+  <!-- Upcoming Festivals -->
+  <section class="container" id="upcoming-festivals" aria-label="Upcoming Festivals">
+    <h3 class="section-title">Upcoming Festivals &rarr;</h3>
+    <div class="cards-grid">
+      <article class="card" tabindex="0" aria-labelledby="title-sarhul">
+        <img src="https://currentaffairs.adda247.com/wp-content/uploads/multisite/sites/5/2022/04/07080859/Sarhul-Festival-04-1.jpg" alt="Sarhul Festival" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-sarhul">Sarhul Festival</h4>
+          <p class="card-desc">Celebration of Spring and nature</p>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" aria-labelledby="title-karma">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4-I9pQWoW1J5wiNrPs3LIXr8lZ7ug9ll4cQ&s" alt="Karma Festival" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-karma">Karma Festival</h4>
+          <p class="card-desc">Harvest festival of tribal communities</p>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" aria-labelledby="title-sohrai">
+        <img src="https://i.ytimg.com/vi/0jyKW66vzbg/maxresdefault.jpg" alt="Sohrai Festival" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-sohrai">Sohrai Festival</h4>
+          <p class="card-desc">Harvest festival and cattle worship</p>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" aria-labelledby="title-tusu">
+        <img src="https://media.assettype.com/sentinelassam-english%2F2025-01-12%2Foniv9xhn%2FTisu.jpg?w=480&dpr=2&auto=format%2Ccompress&fit=max&q=85" alt="Tusu Festival" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-tusu">Tusu Festival</h4>
+          <p class="card-desc">A Tribal harvest festival</p>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" aria-labelledby="title-jyotia">
+        <img src="https://utsav.gov.in/public/uploads/event_picture_image/event_683/1661155441551399950.jpg" alt="Joya Festival" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-jyotia">Jawa Festival</h4>
+          <p class="card-desc">An ancestral harvest festival</p>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" aria-labelledby="title-path">
+        <img src="https://odishatourism.gov.in/content/dam/tourism/home/experience/rath-yatra/2025/RathYatra-2025-1.JPG" alt="Rath Yatra" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-path">Rath Yatra</h4>
+          <p class="card-desc">Chariot festival of Lord Jagannath</p>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" aria-labelledby="title-makar">
+        <img src="https://www.thegoan.net/uploads/news/big_124647_Kites-and-Til-gul-laddoo-Makar-sankranti.jpg" alt="Makar Sankranti" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-makar">Makar Sankranti Mela</h4>
+          <p class="card-desc">Winter harvest festival celebrated in Jharkhand</p>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" aria-labelledby="title-windhu">
+        <img src="https://i0.wp.com/hindupad.com/wp-content/uploads/Vindhyavasini-Maa.jpg?fit=2100%2C1575&ssl=1" alt="Windhyavasini Mela" />
+        <div class="card-content">
+          <h4 class="card-title" id="title-windhu">Vindhyavasini Mela</h4>
+          <p class="card-desc">Annual local fair dedicated to Windhyavasini</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div>© 2024 Jharkhand Tourism. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="#">Company</a>
+      <a href="#">Legal</a>
+      <a href="#">Support</a>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script href="script.js">
+    
+  </script>
+</body>
+
+</html>
